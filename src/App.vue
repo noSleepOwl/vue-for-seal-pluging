@@ -1,32 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SealPic></SealPic>
+    <Demo></Demo>
+    <JSXDemo></JSXDemo>
+    <CanvasDemo></CanvasDemo>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HelloWorld from '@/components/HelloWorld.vue';
+import SealPic from '@/components/SealPic.vue';
+import Demo from '@/components/Demo'
+import JSXDemo from '@/components/DemoFor'
+import CanvasDemo from '@/components/SealDrawer'
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld, SealPic, Demo, JSXDemo, CanvasDemo
+  },
+};
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
