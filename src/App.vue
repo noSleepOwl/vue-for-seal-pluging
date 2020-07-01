@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <SealPic></SealPic>
+    <!-- <SealPic></SealPic> -->
     <Demo></Demo>
-    <JSXDemo></JSXDemo>
-    <CanvasDemo></CanvasDemo>
+    <!-- <JSXDemo></JSXDemo> -->
+    <!-- <CanvasDemo></CanvasDemo> -->
+    <FunctionalDemo></FunctionalDemo>
   </div>
 </template>
 
@@ -13,10 +14,11 @@ import SealPic from '@/components/SealPic.vue';
 import Demo from '@/components/Demo'
 import JSXDemo from '@/components/DemoFor'
 import CanvasDemo from '@/components/SealDrawer'
+import FunctionalDemo from '@/components/functional/FunctionalDeml'
 export default {
   name: 'app',
   components: {
-    HelloWorld, SealPic, Demo, JSXDemo, CanvasDemo
+    HelloWorld, SealPic, Demo, JSXDemo, CanvasDemo, FunctionalDemo
   },
 };
 </script>

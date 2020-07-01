@@ -9,6 +9,7 @@ const MODEL = {
 }
 
 
+
 let controlCard = Vue.extend({
     name: 'qj-control-card',
     props: {
